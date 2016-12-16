@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Author: Nathan Cool -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    tools:context="edu.iastate.pal.AboutActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:background="@color/colorPrimary"
+        android:elevation="@dimen/activity_actionBar_elevation"
+        android:id="@+id/activity_about_actionBar"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <ScrollView
+        android:background="@color/colorGenericWhite"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:baselineAligned="false"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_horizontal_margin"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            android:paddingTop="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/s_activity_about_textView_title"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="30sp"/>
+
+            <View
+                android:layout_height="@dimen/activity_divider_height"
+                android:layout_width="match_parent"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/s_activity_about_textView_description"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="18sp"/>
+
+            <View
+                android:layout_height="@dimen/activity_divider_height"
+                android:layout_width="match_parent"/>
+
+            <ImageView
+                android:contentDescription="@string/s_activity_about_contentDescription_groupPhoto"
+                android:layout_gravity="center"
+                android:layout_height="@dimen/activity_about_imageView_groupPhoto_height"
+                android:layout_width="@dimen/activity_about_imageView_groupPhoto_width"
+                android:src="@drawable/ic_selfie"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="edu.iastate.pal">
+
+    <!-- Author: Nathan Cool -->
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/s_global_app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup">
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/noTitle"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CreateAccountActivity"
+            android:parentActivityName=".LoginActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".AboutActivity"
+            android:parentActivityName=".LoginActivity" />
+        <activity
+            android:name=".DashboardActivity"
+            android:configChanges="orientation"
+            android:parentActivityName=".LoginActivity" />
+        <activity
+            android:name=".NotesDashboardActivity"
+            android:parentActivityName=".DashboardActivity" />
+        <activity
+            android:name=".NewNoteActivity"
+            android:parentActivityName=".NotesDashboardActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".NewCanvasNoteActivity"
+            android:parentActivityName=".NotesDashboardActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".CourseManagerDashboardActivity"
+            android:parentActivityName=".DashboardActivity" />
+        <activity
+            android:name=".NewCourseActivity"
+            android:parentActivityName=".CourseManagerDashboardActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".CourseDetailsActivity"
+            android:parentActivityName=".CourseManagerDashboardActivity" />
+        <activity
+            android:name=".ChatSessionActivity"
+            android:parentActivityName=".DashboardActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".MapsDashboardActivity"
+            android:parentActivityName=".DashboardActivity" />
+        <activity
+            android:label="@string/s_activity_courseLocatorMap_actionBarTitle"
+            android:name=".CourseLocatorMapActivity"
+            android:parentActivityName=".MapsDashboardActivity" />
+        <!-- Meta -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_maps_key" />
+
+    </application>
+
+</manifest>

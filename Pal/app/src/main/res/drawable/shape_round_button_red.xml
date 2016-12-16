@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Author: Nathan Cool -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/colorGenericRed"/>
+            <corners android:radius="10dp" />
+            <padding android:left="@dimen/activity_vertical_margin"
+                android:right="@dimen/activity_vertical_margin"/>
+        </shape>
+    </item>
+</selector>

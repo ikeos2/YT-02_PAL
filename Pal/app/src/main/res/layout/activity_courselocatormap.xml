@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Nathan Cool -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    tools:context="edu.iastate.pal.CourseLocatorMapActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:id="@+id/activity_courseLocatorMap_actionbar"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:elevation="1dp"
+            android:layout_gravity="top|end"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:background="@color/colorGenericBlack"
+                android:elevation="10dp"
+                android:id="@+id/activity_courseLocatorMap_TextView_markerDistanceView"
+                android:layout_gravity="top|end"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_width="wrap_content"
+                android:padding="4dp"
+                android:text="Distance:"
+                android:textColor="#FFFFFF"/>
+
+            <Button
+                android:background="@drawable/shape_round_button_red"
+                android:elevation="10dp"
+                android:id="@+id/activity_courseLocatorMap_Button_clearMarkers"
+                android:layout_gravity="top|end"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:padding="8dp"
+                android:text="@string/s_generic_word_reset"
+                android:textColor="#FFFFFF"/>
+
+        </LinearLayout>
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            tools:context="edu.iastate.pal.CourseLocatorMapActivity" />
+
+        <LinearLayout
+            android:layout_gravity="bottom|start"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/activity_courseLocatorMap_fab_toggleDistanceMode"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="@dimen/activity_vertical_margin"
+                android:layout_width="wrap_content"
+                android:src="@android:drawable/ic_dialog_map"
+                app:layout_anchor="@id/map"
+                app:layout_anchorGravity="bottom|left|end" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/activity_courseLocatorMap_fab_toggleMapType"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_vertical_margin"
+                android:layout_width="wrap_content"
+                android:src="@android:drawable/ic_menu_mapmode"
+                app:layout_anchor="@id/map"
+                app:layout_anchorGravity="bottom|left|end" />
+
+        </LinearLayout>
+
+        <TextView
+            android:background="@color/colorGenericBlack"
+            android:elevation="10dp"
+            android:id="@+id/activity_courseLocatorMap_TextView_mapMode"
+            android:layout_gravity="bottom|end"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_vertical_margin"
+            android:layout_width="wrap_content"
+            android:padding="4dp"
+            android:text="Mode:"
+            android:textColor="#FFFFFF"/>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>

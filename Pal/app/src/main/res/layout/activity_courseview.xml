@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/activity_courseview_courseLinearLayout"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="CourseName"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/activity_courseview_courseNameTextView" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_courseview_classTimeLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_courseview_courseLinearLayout"
+        android:layout_alignLeft="@id/activity_courseview_courseLinearLayout"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/activity_courseview_classTimeTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="MeetingTime"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/activity_courseview_daysLinearLayout"
+        android:layout_toRightOf="@id/activity_courseview_classTimeLinearLayout"
+        android:layout_alignBottom="@id/activity_courseview_classTimeLinearLayout">
+
+       <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Meeting Days"
+        android:textSize="14sp"
+        android:id="@+id/activity_courseview_daysTextView" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_courseview_roomNumberLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/activity_courseview_courseLinearLayout"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Room"
+            android:id="@+id/activity_courseview_roomNumberTextView"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/activity_courseview_buildingLinearLayout"
+        android:layout_toLeftOf="@id/activity_courseview_roomNumberLinearLayout"
+        android:layout_alignTop="@id/activity_courseview_courseLinearLayout">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Building"
+            android:id="@+id/activity_courseview_buildingNameTextView"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

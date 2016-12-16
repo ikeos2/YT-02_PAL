@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Author: Nathan Cool -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    tools:context="edu.iastate.pal.NewCanvasNoteActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:background="@color/colorPrimary"
+        android:elevation="@dimen/activity_actionBar_elevation"
+        android:id="@+id/activity_newDrawingNote_actionBar"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <LinearLayout
+        android:background="#FFEEEEEE"
+        android:baselineAligned="false"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_vertical_margin"
+        android:paddingTop="4dp">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_height="50dp"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:contentDescription="@string/activity_newCanvasNote_contentDescription_newCanvas"
+                android:id="@+id/activity_newCanvasNote_imageButton_newCanvas"
+                android:layout_height="fill_parent"
+                android:layout_width="wrap_content"
+                android:src="@drawable/newdrawingnote" />
+
+            <ImageButton
+                android:contentDescription="@string/activity_newCanvasNote_contentDescription_brushMode"
+                android:id="@+id/activity_newCanvasNote_imageButton_brushMode"
+                android:layout_height="fill_parent"
+                android:layout_width="wrap_content"
+                android:src="@drawable/brushtype" />
+
+            <ImageButton
+                android:contentDescription="@string/activity_newCanvasNote_contentDescription_eraserMode"
+                android:id="@+id/activity_newCanvasNote_imageButton_eraserMode"
+                android:layout_height="fill_parent"
+                android:layout_width="wrap_content"
+                android:src="@drawable/erasertype" />
+
+            <ImageButton
+                android:contentDescription="@string/activity_newCanvasNote_contentDescription_saveCanvas"
+                android:id="@+id/activity_newCanvasNote_imageButton_saveCanvas"
+                android:layout_height="fill_parent"
+                android:layout_width="wrap_content"
+                android:src="@drawable/savenote" />
+
+        </LinearLayout>
+
+        <edu.iastate.pal.templates.DrawingNoteView
+            android:background="#FFFFFFFF"
+            android:id="@+id/canvas"
+            android:layout_height="0dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"/>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical" >
+
+            <HorizontalScrollView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                tools:ignore="UselessParent">
+
+                <LinearLayout
+                    android:id="@+id/activity_newCanvasNote_linearLayout_colorPalette"
+                    android:layout_marginTop="4dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:background="#FF000000"
+                        android:contentDescription="@string/activity_newCanvasNote_contentDescription_color"
+                        android:layout_height="@dimen/l_brush"
+                        android:layout_margin="2dp"
+                        android:layout_width="@dimen/l_brush"
+                        android:onClick="paintClicked"
+                        android:src="@drawable/paint"
+                        android:tag="#FF000000" />
+
+                    <ImageButton
+                        android:background="#FF660000"
+                        android:contentDescription="@string/activity_newCanvasNote_contentDescription_color"
+                        android:layout_height="@dimen/l_brush"
+                        android:layout_margin="2dp"
+                        android:layout_width="@dimen/l_brush"
+                        android:onClick="paintClicked"
+                        android:src="@drawable/paint"
+                        android:tag="#FF660000" />
+
+                    <ImageButton
+                        android:background="#FF0000FF"
+                        android:contentDescription="@string/activity_newCanvasNote_contentDescription_color"
+                        android:layout_height="@dimen/l_brush"
+                        android:layout_margin="2dp"
+                        android:layout_width="@dimen/l_brush"
+                        android:onClick="paintClicked"
+                        android:src="@drawable/paint"
+                        android:tag="#FF0000FF" />
+
+                    <ImageButton
+                        android:background="#FF990099"
+                        android:contentDescription="@string/activity_newCanvasNote_contentDescription_color"
+                        android:layout_height="@dimen/l_brush"
+                        android:layout_margin="2dp"
+                        android:layout_width="@dimen/l_brush"
+                        android:onClick="paintClicked"
+                        android:src="@drawable/paint"
+                        android:tag="#FF990099" />
+
+                    <ImageButton
+                        android:background="#FF009900"
+                        android:contentDescription="@string/activity_newCanvasNote_contentDescription_color"
+                        android:layout_height="@dimen/l_brush"
+                        android:layout_margin="2dp"
+                        android:layout_width="@dimen/l_brush"
+                        android:onClick="paintClicked"
+                        android:src="@drawable/paint"
+                        android:tag="#FF009900" />
+
+                    <ImageButton
+                        android:background="#FF787878"
+                        android:contentDescription="@string/activity_newCanvasNote_contentDescription_color"
+                        android:layout_height="@dimen/l_brush"
+                        android:layout_margin="2dp"
+                        android:layout_width="@dimen/l_brush"
+                        android:onClick="paintClicked"
+                        android:src="@drawable/paint"
+                        android:tag="#FF787878" />
+
+                    <ImageButton
+                        android:background="#FF009999"
+                        android:contentDescription="@string/activity_newCanvasNote_contentDescription_color"
+                        android:layout_height="@dimen/l_brush"
+                        android:layout_margin="2dp"
+                        android:layout_width="@dimen/l_brush"
+                        android:onClick="paintClicked"
+                        android:src="@drawable/paint"
+                        android:tag="#FF009999" />
+
+                    <ImageButton
+                        android:background="#FFFF0000"
+                        android:contentDescription="@string/activity_newCanvasNote_contentDescription_color"
+                        android:layout_height="@dimen/l_brush"
+                        android:layout_margin="2dp"
+                        android:layout_width="@dimen/l_brush"
+                        android:onClick="paintClicked"
+                        android:src="@drawable/paint"
+                        android:tag="#FFFF0000" />
+
+                    <ImageButton
+                        android:background="#FFFF6600"
+                        android:contentDescription="@string/activity_newCanvasNote_contentDescription_color"
+                        android:layout_height="@dimen/l_brush"
+                        android:layout_margin="2dp"
+                        android:layout_width="@dimen/l_brush"
+                        android:onClick="paintClicked"
+                        android:src="@drawable/paint"
+                        android:tag="#FFFF6600" />
+
+                    <ImageButton
+                        android:background="#FFFF6666"
+                        android:contentDescription="@string/activity_newCanvasNote_contentDescription_color"
+                        android:layout_height="@dimen/l_brush"
+                        android:layout_margin="2dp"
+                        android:layout_width="@dimen/l_brush"
+                        android:onClick="paintClicked"
+                        android:src="@drawable/paint"
+                        android:tag="#FFFF6666" />
+
+                    <ImageButton
+                        android:background="#FFFFCC00"
+                        android:contentDescription="@string/activity_newCanvasNote_contentDescription_color"
+                        android:layout_height="@dimen/l_brush"
+                        android:layout_margin="2dp"
+                        android:layout_width="@dimen/l_brush"
+                        android:onClick="paintClicked"
+                        android:src="@drawable/paint"
+                        android:tag="#FFFFCC00" />
+
+                    <ImageButton
+                        android:background="#FFFFFFFF"
+                        android:contentDescription="@string/activity_newCanvasNote_contentDescription_color"
+                        android:layout_height="@dimen/l_brush"
+                        android:layout_margin="2dp"
+                        android:layout_width="@dimen/l_brush"
+                        android:onClick="paintClicked"
+                        android:src="@drawable/paint"
+                        android:tag="#FFFFFFFF" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<!-- Author: Nathan Cool -->
+<resources>
+    <!-- CONVENTION: Under each sub-heading comment, organize dimensions alphabetically. -->
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Global Custom Dimensions -->
+    <dimen name="activity_actionBar_elevation">4dp</dimen>
+    <dimen name="activity_divider_height">16dp</dimen>
+    <dimen name="activity_divider_width">16dp</dimen>
+
+    <!-- activity_login.xml Dimensions -->
+    <dimen name="activity_login_button_login_textSize">20sp</dimen>
+    <dimen name="activity_login_editText_padding">16sp</dimen>
+    <dimen name="activity_login_editText_textSize">20sp</dimen>
+    <dimen name="activity_login_imageView_appIcon_height">125dp</dimen>
+    <dimen name="activity_login_imageView_appIcon_width">125dp</dimen>
+    <dimen name="activity_login_textView_createAccount_textSize">18sp</dimen>
+    <dimen name="activity_login_textView_forgotCredentials_textSize">18sp</dimen>
+    <dimen name="activity_login_textView_subTitle_textSize">20sp</dimen>
+    <dimen name="activity_login_textView_title_textSize">36sp</dimen>
+
+    <!-- activity_about.xml Dimensions -->
+    <dimen name="activity_about_imageView_groupPhoto_height">475dp</dimen>
+    <dimen name="activity_about_imageView_groupPhoto_width">600dp</dimen>
+
+    <!-- activity_createaccount.xml Dimensions -->
+    <dimen name="activity_createAccount_button_textSize">20sp</dimen>
+    <dimen name="activity_createAccount_editText_padding">16sp</dimen>
+    <dimen name="activity_createAccount_editText_textSize">20sp</dimen>
+    <dimen name="activity_createAccount_imageView_appIcon_height">60dp</dimen>
+    <dimen name="activity_createAccount_imageView_appIcon_width">60dp</dimen>
+    <dimen name="activity_createAccount_textView_subTitle_textSize">18sp</dimen>
+    <dimen name="activity_createAccount_textView_title_textSize">28sp</dimen>
+
+    <!-- activity_dashboard.xml Dimensions -->
+    <dimen name="activity_dashboard_imageView_landscapeMode_height">75dp</dimen>
+    <dimen name="activity_dashboard_imageView_landscapeMode_width">75dp</dimen>
+    <dimen name="activity_dashboard_imageView_portraitMode_height">100dp</dimen>
+    <dimen name="activity_dashboard_imageView_portraitMode_width">100dp</dimen>
+    <dimen name="activity_dashboard_textView_paddingTop">8dp</dimen>
+    <dimen name="activity_dashboard_textView_textSize">18sp</dimen>
+
+    <!-- activity_mapsdashboard.xml -->
+    <dimen name="activity_mapsDashboard_textView_courseManagerMap_description_textSize">18sp</dimen>
+    <dimen name="activity_mapsDashboard_textView_courseManagerMap_title_textSize">28sp</dimen>
+
+    <!-- NewCanvasNoteActivity.java and DrawingNoteView.java and activity_newcanvasnote.xml Dimensions -->
+    <dimen   name="s_brush">10dp</dimen>
+    <integer name="s_size"> 10</integer>
+    <dimen   name="m_brush">20dp</dimen>
+    <integer name="m_size"> 20</integer>
+    <dimen   name="l_brush">30dp</dimen>
+    <integer name="l_size"> 30</integer>
+
+</resources>

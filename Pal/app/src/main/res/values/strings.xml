@@ -1,0 +1,125 @@
+<!-- Author: Nathan Cool -->
+<resources>
+    <!-- CONVENTION: Under each sub-heading comment, organize strings alphabetically. -->
+
+    <!-- Global Strings -->
+    <string name="s_global_app_name">Pal</string>
+    <string name="s_global_imageView_appIcon_accessibilityDescription">Pal application icon</string>
+    <string name="s_global_module_name_chat">Chat</string>
+    <string name="s_global_module_name_courseManager">Course Manager</string>
+    <string name="s_global_module_name_maps">Maps</string>
+    <string name="s_global_module_name_notes">Notes</string>
+
+    <!-- Generic Word Strings -->
+    <string name="s_generic_word_chat">Chat</string>
+    <string name="s_generic_word_dashboard">Dashboard</string>
+    <string name="s_generic_word_email">Email</string>
+    <string name="s_generic_word_login">Login</string>
+    <string name="s_generic_word_password">Password</string>
+    <string name="s_generic_word_reset">Reset</string>
+    <string name="s_generic_word_settings">Settings</string>
+    <string name="s_generic_word_signIn">Sign In</string>
+    <string name="s_generic_word_username">Username</string>
+
+    <!-- Volley Strings -->
+    <string name="s_volley_errorMessage_generic">Oops! There was an error.</string>
+    <string name="s_volley_errorMessage_server">Error reaching server.</string>
+
+    <!-- LoginActivity.java and activity_login.xml Strings -->
+    <string name="s_activity_login_contendDescription_aboutDevelopers">Question mark</string>
+    <string name="s_activity_login_errorMessage_emptyCredentialsFields">Empty login field(s)</string>
+    <string name="s_activity_login_errorMessage_invalidCredentials">Invalid credentials.</string>
+    <string name="s_activity_login_textView_createAccount">Create A New Account</string>
+    <string name="s_activity_login_textView_forgotPassword">Forgot Password?</string>
+    <string name="s_activity_login_textView_subTitle">Use. Succeed. Sleep.</string>
+
+    <!-- AboutActivity.java and activity_about.xml Strings -->
+    <string name="s_activity_about_contentDescription_groupPhoto">Pal developer photo (Alexander Orman, Nathan Cool, Lily Mosman, and Evan Lambert)</string>
+    <string name="s_activity_about_textView_description">Group Members (left-to-right):\n- Alexander Orman\n- Nathan Cool\n- Lily Mosman\n- Evan Lambert\n\nDetails\n- Course: CS 309\n- Term: Fall 2016\n- Group: YT-02</string>
+    <string name="s_activity_about_textView_title">About Pal\s Developers</string>
+
+    <!-- CreateAccountActivity.java and activity_createaccount.xml Strings -->
+    <string name="s_activity_createAccount_alertDialog_returnToLoginWithCompletedFields_message">Do you want to create or discard your new account?</string>
+    <string name="s_activity_createAccount_alertDialog_returnToLoginWithCompletedFields_title">Continue?</string>
+    <string name="s_activity_createAccount_alertDialog_returnToLoginWithEmptyFields_message">You did not finish creating your new account; it will be discarded.</string>
+    <string name="s_activity_createAccount_alertDialog_returnToLoginWithEmptyFields_title">Continue to login screen?</string>
+    <string name="s_activity_createAccount_button_createUserAccount">Create Account</string>
+    <string name="s_activity_createAccount_errorMessage_usernameExists">This username is taken.</string>
+    <string-array name="s_activity_createAccount_spinnerOptions_userTypes">
+        <item>Student</item>
+        <item>Faculty</item>
+        <!-- ALL ADMIN USERS WILL BE PRE-ADDED TO THE SERVER FOR SECURITY PURPOSES -->
+        <!--<item>Administrator</item>-->
+    </string-array>
+    <string name="s_activity_createAccount_textView_spinnerOptionsPrompt">Select User Type:</string>
+    <string name="s_activity_createAccount_textView_subTitle">Create your new student or faculty user account below.</string>
+    <string name="s_activity_createAccount_textView_title">Welcome to Pal!</string>
+    <string name="s_activity_createAccount_toastMessage_createUserGeneralError">Error creating user.</string>
+    <string name="s_activity_createAccount_toastMessage_userDiscarded">New user discarded</string>
+
+    <!-- DashboardActivity.java and activity_dashboard.xml Strings -->
+    <string name="s_activity_dashboard_contentDescription_chatModule">Chat module icon</string>
+    <string name="s_activity_dashboard_contentDescription_courseManagerModule">Course manager module icon</string>
+    <string name="s_activity_dashboard_contentDescription_mapsModule">Maps module icon</string>
+    <string name="s_activity_dashboard_contentDescription_notesModule">Notes module icon</string>
+    <string name="s_activity_dashboard_overflowMenu_logout">Logout</string>
+
+    <!-- NotesDashboardActivity.java and activity_notesdashboard.xml Strings -->
+    <string name="s_activity_notesDashboard_overflowMenu_sort_AZ">Sort A-Z</string>
+    <string name="s_activity_notesDashboard_overflowMenu_sort_ZA">Sort Z-A</string>
+    <string name="s_activity_notesDashboard_overflowMenu_sync">Sync</string>
+
+    <!-- NewNoteActivity.java and activity_newnote.xml Strings -->
+    <string name="s_activity_newNote_buttonLabel_bold">Bold</string>
+    <string name="s_activity_newNote_buttonLabel_italic">Italic</string>
+    <string name="s_activity_newNote_buttonLabel_underline">Underline</string>
+    <string name="s_activity_newNote_hint_content">Add note&#8230;</string>
+    <string name="s_activity_newNote_hint_title">Title</string>
+
+    <!-- NewCanvasNoteActivity.java and DrawingNoteView.java and activity_newcanvasnote.xml Dimensions -->
+    <string name="activity_newCanvasNote_contentDescription_newCanvas">New Canvas</string>
+    <string name="activity_newCanvasNote_contentDescription_brushMode">Brush Mode</string>
+    <string name="activity_newCanvasNote_contentDescription_eraserMode">Eraser Mode</string>
+    <string name="activity_newCanvasNote_contentDescription_saveCanvas">Save Canvas</string>
+    <string name="activity_newCanvasNote_contentDescription_color">Color</string>
+    <string name="newDrawingNote">New</string>
+    <string name="brushType">Brush</string>
+    <string name="eraserType">Erase</string>
+    <string name="saveDrawing">Save</string>
+    <string name="paintColor">Paint</string>
+    <string name="sml">Small</string>
+    <string name="med">Medium</string>
+    <string name="lrg">Large</string>
+
+    <!-- MapsDashboardActivity.java and activity_mapsdashboard.xml Strings -->
+    <string name="s_activity_mapsDashboard_title">Maps Dashboard</string>
+    <string name="s_activity_mapsDashboard_button_launch_map">Launch Map</string>
+    <string name="s_activity_mapsDashboard_textView_courseManagerMap_title">Course Locator Map</string>
+    <string name="s_activity_mapsDashboard_textView_courseManagerMap_description">Displays the locations of all courses in your Course Manager module.\n\nFeatures:\n\n- NORMAL, HYBRID, SATELLITE, and TERRAIN map modes (lower button in bottom-left corner)\n\n- \'Distance Mode\' (upper button in bottom-left corner) allows you to create a route path. When enabled, touch markers to add a location to your route. The total route distance, in miles, is displayed in the top left corner. To start over, press RESET. When \'Distance Mode\' is turned off, clicking a marker shows course info.</string>
+
+    <!-- CourseLocatorMapActivity.java Strings -->
+    <string name="s_activity_courseLocatorMap_actionBarTitle">Course Locator</string>
+
+    <!-- NewCourseActivity.java Strings -->
+    <string name="s_activity_newcourse_courseNameField">Course</string>
+    <string name="s_activity_newcourse_professorNameField">Professor</string>
+    <string name="s_activity_newcourse_courseDaysField">Days</string>
+    <string name="s_activity_newcourse_buildingNameField">Building</string>
+    <string name="s_activity_newcourse_roomNumberField">Room</string>
+    <string name="s_activity_newcourse_timeField">Time</string>
+    <string name="s_activity_newcourse_startTimeField">8:00 AM</string>
+    <string name="s_activity_newcourse_endTimeField">8:50 AM</string>
+    <string-array name="s_activity_newCourse_daysOfTheWeek">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+    </string-array>
+
+    <!-- CourseDetails Activity Strings -->
+    <string name="s_activity_coursedetails_upload_file_title">Upload File</string>
+    <string name="s_activity_coursedetails_delete_course_options">Delete Course</string>
+    <string name="s_activity_coursedetails_course_files_text">Course Files</string>
+
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Author: Nathan Cool -->
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/ic_swap_vertical"
+        android:id="@+id/activity_notes_dashboard_overflow_sort_AZ"
+        android:title="@string/s_activity_notesDashboard_overflowMenu_sort_AZ"
+        app:showAsAction="never"/>
+    <item
+        android:icon="@drawable/ic_swap_vertical"
+        android:id="@+id/activity_notes_dashboard_overflow_sort_ZA"
+        android:title="@string/s_activity_notesDashboard_overflowMenu_sort_ZA"
+        app:showAsAction="never"/>
+    <item
+        android:icon="@drawable/ic_refresh_black"
+        android:id="@+id/activity_notes_dashboard_overflow_sync"
+        android:title="@string/s_activity_notesDashboard_overflowMenu_sync"
+        app:showAsAction="ifRoom"/>
+</menu>

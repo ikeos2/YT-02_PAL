@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Author: Nathan Cool -->
+<resources>
+
+    <!-- Standard Colors (Green and Light Blue Combination) -->
+    <!-- Cool theme generator ~ https://www.materialpalette.com/green/light-blue -->
+
+    <color name="colorPrimary">#4CAF50</color>
+    <color name="colorPrimaryDark">#388E3C</color>
+    <color name="colorPrimaryLight">#C8E6C9</color>
+    <color name="colorAccent">#03A9F4</color>
+    <color name="colorTextPrimary">#212121</color>
+    <color name="colorTextSecondary">#757575</color>
+    <color name="colorTextIcons">#FFFFFF</color>
+    <color name="colorDivider">#BDBDBD</color>
+
+    <!-- Generic Colors -->
+    <color name="colorGenericBlack">#000000</color>
+    <color name="colorGenericGreen">#90EE90</color>
+    <color name="colorGenericRed">#FF0000</color>
+    <color name="colorGenericWhite">#FFFFFF</color>
+
+    <!-- Custom Colors -->
+    <color name="color_CourseMeetingTime">#808080</color>
+    <color name="msg_from_others">#e5e7eb</color>
+
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Nathan Cool -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_chatDashboard_shell"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    tools:context="edu.iastate.pal.ChatDashboardActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:id="@+id/activity_chatDashboard_actionbar"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/activity_chatDashboard_coordinatorShell"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/activity_chatDashboard_noChatTextView"
+            android:text="No conversations at the moment"
+            android:layout_gravity="center"
+            android:visibility="visible"
+            android:textSize="20sp"/>
+
+
+        <ListView
+            android:id="@+id/activity_chatDashboard_listView_conversations"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/activity_chatDashboard_fab_newChat"
+            android:layout_gravity="bottom|end"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_plus"
+            app:layout_anchor="@id/activity_chatDashboard_listView_conversations"
+            app:layout_anchorGravity="bottom|right|end" />
+    </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>
